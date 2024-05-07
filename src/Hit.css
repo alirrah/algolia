@@ -1,0 +1,31 @@
+article{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    border: 0.1rem hsl(0, 0%, 77%) solid;
+    border-radius: 0.5rem;
+
+    background-color: hsl(0, 0%, 100%);
+
+    padding: 1rem;
+
+    block-size: 35rem;
+    overflow: hidden;
+
+    font-size: 1.2rem;
+
+    transition: 0.25s;
+}
+
+article:hover{
+    border-color: hsl(0, 0%, 70%);
+
+    box-shadow: hsla(0, 0%, 39%, 0.2) 0 0.2rem 0.8rem 0;
+}
+
+article img{
+    block-size: 16rem;
+    inline-size: 10rem;
+}
