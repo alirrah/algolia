@@ -92,7 +92,7 @@ body {
             gap: 2rem;
 
             & > li {
-                inline-size: max(20%, 25rem);
+                inline-size: max(20%, 20rem);
             }
         }
 
