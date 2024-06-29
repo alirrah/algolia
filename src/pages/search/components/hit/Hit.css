@@ -1,0 +1,18 @@
+.hit-card {
+    block-size: 35rem;
+
+    overflow: hidden;
+
+    .ant-card-body {
+        block-size: 100%;
+
+        .hit-container {
+            block-size: 100%;
+
+            .hit-image {
+                block-size: 16rem;
+                inline-size: 10rem;
+            }
+        }
+    }
+}

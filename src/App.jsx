@@ -1,18 +1,15 @@
-import algoliasearch from 'algoliasearch/lite';
-import { InstantSearch, SearchBox, Hits, Pagination, Configure } from 'react-instantsearch';
-import Hit from "./Hit.jsx";
-import "./App.css";
-
-const searchClient = algoliasearch('TBPK8EXV5W', '813919433f4e7a9c9f09b1d55890ab36');
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import SearchPage from "./pages/search/SearchPage.jsx";
+import SinglePage from "./pages/single-page/SinglePage.jsx";
 
 function App() {
     return (
-        <InstantSearch searchClient={searchClient} indexName="books">
-            <Configure hitsPerPage={20} />
-            <SearchBox />
-            <Hits hitComponent={Hit} />
-            <Pagination />
-        </InstantSearch>
+        <BrowserRouter>
+            <Routes>
+                <Route path='/algolia' index element={<SearchPage/>}/>
+                <Route path="/algolia/:id" element={<SinglePage/>}/>
+            </Routes>
+        </BrowserRouter>
     );
 }
 
