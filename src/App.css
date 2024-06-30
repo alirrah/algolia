@@ -101,14 +101,18 @@ body {
 
                 & .ais-RefinementList-showMore, & .ais-RangeInput-submit {
                     background-color: rgb(22, 119, 255);
+
                     border: 0;
-                    padding: 0.5rem 1rem;
                     border-radius: 0.7rem;
+
+                    padding: 0.5rem 1rem;
+
                     color: white;
                 }
 
                 & .ais-RangeInput-form {
                     display: flex;
+                    justify-content: center;
                     gap: 0.5rem;
                 }
             }
@@ -117,13 +121,16 @@ body {
                 display: flex;
                 gap: 0.5rem;
 
-                & .ais-RefinementList-count  {
+                & .ais-RefinementList-count {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    border-radius: 50%;
+
                     block-size: 2rem;
                     inline-size: 2rem;
+
+                    border-radius: 50%;
+
                     background-color: rgba(0, 0, 0, 0.08);
                 }
             }

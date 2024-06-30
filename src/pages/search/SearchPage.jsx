@@ -9,7 +9,9 @@ function SearchPage() {
     return (
         <InstantSearch searchClient={searchClient} indexName="books">
             <Configure hitsPerPage={20}/>
+
             <SearchBox className='search-box'/>
+
             <div className='filter-box'>
                 <Collapse items={[
                     {
@@ -19,11 +21,13 @@ function SearchPage() {
                             <Flex gap='middle' wrap='wrap'>
                                 <Flex vertical='false' gap='small' className='same-size'>
                                     <Typography.Text>Author</Typography.Text>
+
                                     <RefinementList attribute="Author" showMore/>
                                 </Flex>
 
                                 <Flex vertical='false' gap='small' className='same-size'>
                                     <Typography.Text>Year</Typography.Text>
+
                                     <RangeInput attribute="Year"/>
                                 </Flex>
                             </Flex>
@@ -31,7 +35,9 @@ function SearchPage() {
                     }
                 ]}/>
             </div>
+
             <Hits hitComponent={Hit}/>
+
             <Pagination/>
         </InstantSearch>
     );
