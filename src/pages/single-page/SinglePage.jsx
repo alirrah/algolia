@@ -2,7 +2,6 @@ import { useParams } from 'react-router-dom';
 import algoliasearch from 'algoliasearch/lite';
 import {InstantSearch, SearchBox, Hits, Pagination, Configure, Highlight} from 'react-instantsearch';
 import {Flex, Image, Typography} from "antd";
-import './SinglePage.css';
 
 const SinglePage = () => {
     let {id} = useParams();
