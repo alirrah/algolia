@@ -4,7 +4,7 @@ import Hit from "./components/hit/Hit.jsx";
 import {Collapse, Flex, Typography} from "antd";
 
 function SearchPage() {
-    const searchClient = algoliasearch('TBPK8EXV5W', '813919433f4e7a9c9f09b1d55890ab36');
+    const searchClient = algoliasearch('Y72RW5ULWO', '058449f0fa41333d0369ceb384dfcc13');
 
     return (
         <InstantSearch searchClient={searchClient} indexName="books">
